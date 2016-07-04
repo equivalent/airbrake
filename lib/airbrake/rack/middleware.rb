@@ -50,8 +50,8 @@ module Airbrake
       # - Goliath uses rack.exception: https://goo.gl/i7e1nA
       def framework_exception(env)
         env['action_dispatch.exception'] ||
-          env['rack.exception'] ||
-          env['sinatra.error']
+          env['sinatra.error'] ||
+          env['rack.exception']
       end
     end
   end

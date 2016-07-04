@@ -50,7 +50,7 @@ test:
             rvm-exec 1.9.3-p551 bundle exec appraisal rails-4.1 rake spec:integration:rails
             rvm-exec 1.9.3-p551 bundle exec appraisal rails-4.2 rake spec:integration:rails
 
-            rvm-exec 1.9.3-p551 bundle exec appraisal sinatra rake spec:integration:sinatra
+            # rvm-exec 1.9.3-p551 bundle exec appraisal sinatra rake spec:integration:sinatra
 
             rvm-exec 1.9.3-p551 bundle exec appraisal rack rake spec:integration:rack
             ;;
